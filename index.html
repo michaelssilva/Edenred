@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eden Red Controle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./assets/Edenred.svg">
+
+  </head>
+
+  <body>
+
+    <div id="app">
+      <nav>
+        <img src="./assets/Edenred Black.svg" alt="Logo do site" class="logo" />
+
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <ion-icon name="tablet-portrait"></ion-icon>
+              Boards
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="people"></ion-icon>
+              Equipes
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="document-text"></ion-icon>
+              Relatórios
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="cog"></ion-icon>
+              Ajustes
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="inner">
+          <section class="title-avatar">
+            <h1>Implantações <img src="./assets/pencil.svg" alt="" /></h1>
+            <img src="https://avatars.githubusercontent.com/u/80490622?v=4" alt="avatar" />
+          </section>
+
+          <section class="filter">
+            <button>
+              <ion-icon name="filter-outline"></ion-icon>
+              <span>Filtrar</span>
+            </button>
+            <div class="input-wrapper">
+              <ion-icon name="search-outline"></ion-icon>
+              <input
+                type="text"
+                placeholder="Busque por cards, assuntos ou responsáveis..."
+              />
+            </div>
+          </section>
+
+          <section class="new-implantation">
+
+            <button id="open-modal">
+              <span class="material-symbols-outlined">add</span>
+              <span>Adicionar</span>
+            </button>
+            <div id="fade" class="hide"></div>
+            <div id="modal" class="hide">
+              <div class="modal-header">
+                <h2>Adicione sua Implantação</h2>
+              </div>
+              <div class="modal-body">
+                <form id="card-form">
+
+                  <label for="title">Título:</label>
+                  <input type="text" id="title" name="title" required>
+
+                  <label for="client">Cliente:</label>
+                  <input type="text" id="client" name="cliente" required>
+              
+                  <label for="description">Descrição:</label><br>
+                  <textarea id="description" name="description" required></textarea>
+
+                  <label for="date">Data da Implantação:</label>
+                  <input type="date" id="date" name="data-implantacao" required>
+
+                  <label for="owners">Responsáveis:</label>
+                  <input type="text" id="owners" name="responsaveis">
+              
+                  <label for="tags">Tags:</label>
+                  <input type="text" id="tags" name="tags" placeholder="tag1, tag2, tag3...">
+                <div class="botoes">
+                  <button id="add" type="submit">Adicionar Card</button>
+                  <button id="close-modal">Cancelar</button>
+                </div>
+                </form>
+              </div>
+            </div>
+            
+          </section>
+
+          <!-- section.kanban -->
+          <section class="kanban">
+
+            <div class="todo">
+              <h2>Planejamento</h2>
+              <div class="cards">
+                <div class="card">
+                  <h3>Implantação MicroSoft</h3>
+                  <p>
+                    Aqui vai um breve resumo do projeto...
+                  </p>
+                  <div class="rodape">
+                    <div class="tags">
+                      <span>Microsoft</span>
+                      <span>implantação</span>
+                    </div>
+                    <div class="responsavel">
+                      <img src="https://avatars.githubusercontent.com/u/80490622?v=4">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="doing">
+              <h2>Implantação</h2>
+              <div class="cards">
+                <div class="card">
+                  <h3>Projeto já iniciado</h3>
+                  <p>
+                    Breve resumo do projeto com algumas informações..
+                  </p>
+                  <div class="tags">
+                    <span>Tags</span>
+                    <span>pesquisas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="done">
+              <h2>Análise</h2>
+              <div class="cards">
+                <div class="card">
+                  <h3>Projeto para análise e encaminahamento para a finalização</h3>
+                  <p>
+                    Breve resumo do projeto com algumas informações..
+                  </p>
+                  <div class="tags">
+                    <span>tags</span>
+                    <span>tags</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sucess">
+              <h2>Bem Sucedidas</h2>
+              <div class="cards">
+                <div class="card">
+                  <h3>Projetos Finalizados </h3>
+                  <p>
+                    Projetos mais recentes finalizados com sucessi
+                  </p>
+                  <div class="tags">
+                    <span>projetos</span>
+                    <span>tags</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

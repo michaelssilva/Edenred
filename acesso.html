@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="./assets/Edenred.svg">
+</head>
+<body>
+	<img class="wave" src="./assets/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="./assets/bg.svg">
+		</div>
+
+	<div class="login-content" id="login-form">
+
+		<form action="acessar.php" method="POST" >
+			<img src="./assets/avatar.svg">
+			<h2 class="title">Bem Vindo</h2>
+			<div class="input-div one">
+				<div class="i">
+					<i class="fas fa-user"></i>
+				</div>
+				<div class="div">
+					<input type="email" id="email" name="email" placeholder="E-mail">
+				</div>
+			</div>
+			<div class="input-div pass">
+				<div class="i"> 
+					<i class="fas fa-lock"></i>
+				</div>
+				<div class="div">
+					<input type="password" id="senha" name="senha" placeholder="senha">
+				</div>
+			</div>
+			<a href="#">Esqueci minha senha</a>
+			<input type="submit" name="submit" value="Enviar" class="btn">
+			<div id="cadastro">
+				<a href="#">Cadastre-se</a>
+			</div>
+
+		</form>
+
+		</div>
+
+
+		<!-- Inicio do Cadastro -->
+
+
+		<div class="login-content" id="register-form" style="display: none;">
+			<form id="registration-form" action="registrar.php" method="POST">
+				<img src="./assets/avatar.svg">
+			<h2 class="title">Cadastre-se</h2>
+			<div class="input-div one">
+				<div class="i">
+					<i class="fas fa-user"></i>
+				</div>
+				<div class="div">
+					<input type="email" id="email" name="email" placeholder="E-mail">
+				</div>
+			</div>
+			<div class="input-div one">
+				<div class="i">
+					<i class="fas fa-user"></i>
+				</div>
+				<div class="div">
+					<input type="text" id="nome" name="nome" placeholder="Nome">
+				</div>
+			</div>
+			<div class="input-div pass">
+				<div class="i"> 
+					<i class="fas fa-lock"></i>
+				</div>
+				<div class="div">
+					<input type="password" id="senha" name="senha" placeholder="senha">
+				</div>
+			</div>
+
+			<input type="submit" name="submit" value="Enviar" class="btn">
+			<div id="entrar">
+				<a href="acesso.html">Entrar</a>
+			</div>
+			</form>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
